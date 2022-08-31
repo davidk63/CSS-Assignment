@@ -1,0 +1,250 @@
+.kitchen__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 1px 7px 1px rgba(0, 0, 0, 0.1);
+}
+
+.kitchen__header__title {
+  text-align: center;
+  font-family: "Satisfy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 30px;
+  color: #000000;
+  margin-left: 10px;
+}
+
+.kitchen__varieties,
+.kitchen__cuisine {
+  padding: 50px 30px;
+}
+
+.kitchen__varieties__title,
+.kitchen__food-guide__title,
+.kitchen__top-chefs__title {
+  text-align: center;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 40px;
+  color: #2b2b2b;
+  letter-spacing: 8px;
+}
+
+.kitchen__varieties__title::after,
+.kitchen__food-guide__title::after,
+.kitchen__top-chefs__title::after {
+  content: "";
+  background: #342679;
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 80px;
+  height: 3px;
+  display: block;
+  margin: 20px auto;
+}
+
+.kitchen__varieties__pizza-card,
+.kitchen__varieties__frenchfries-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  border: 0;
+}
+
+.kitchen__varieties__pizza-card {
+  color: #ffffff;
+  height: 100%;
+}
+
+.kitchen__varieties__frenchfries-card,
+.kitchen__varieties__macaroon-card,
+.kitchen__varieties__doughnut-card,
+.kitchen__varieties__paneertikka-card {
+  height: 400px;
+}
+
+.kitchen__varieties__pizza-card img,
+.kitchen__varieties__paneertikka-card img,
+.kitchen__varieties__doughnut-card img,
+.kitchen__varieties__macaroon-card img,
+.kitchen__varieties__frenchfries-card img {
+  width: 100%;
+  height: 400%;
+}
+
+.kitchen__varieties__pizza-card .card-overlay,
+.kitchen__varieties__paneertikka-card .card-overlay,
+.kitchen__varieties__doughnut-card .card-overlay,
+.kitchen__varieties__macaroon-card .card-overlay,
+.kitchen__varieties__frenchfries-card .card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  padding: 10px 20px;
+  opacity: 0.9;
+}
+
+.kitchen__varieties__pizza-card .card-overlay {
+  background: #544883;
+}
+
+.kitchen__varieties__macaroon-card .card-overlay {
+  color: #ffffff;
+  background: rgb(0 0 8 / 80%);
+}
+
+.kitchen__varieties__frenchfries-card .card-overlay,
+.kitchen__varieties__doughnut-card .card-overlay,
+.kitchen__varieties__paneertikka-card .card-overlay {
+  background: #d8d2cf;
+}
+
+.kitchen__varieties__pizza-card .card-body,
+.kitchen__varieties__paneertikka-card .card-body,
+.kitchen__varieties__doughnut-card .card-body,
+.kitchen__varieties__macaroon-card .card-body,
+.kitchen__varieties__frenchfries-card .card-body {
+  padding: 0;
+}
+
+.kitchen__varieties__pizza-card .card-text,
+.kitchen__varieties__paneertikka-card .card-text,
+.kitchen__varieties__doughnut-card .card-text,
+.kitchen__varieties__macaroon-card .card-text,
+.kitchen__varieties__frenchfries-card .card-text {
+  padding: 10px 0;
+}
+
+.kitchen__varieties__frenchfries-card .card-title,
+.kitchen__varieties__macaroon-card .card-title,
+.kitchen__varieties__doughnut-card .card-title,
+.kitchen__varieties__paneertikka-card .card-title {
+  font-size: 24px;
+}
+
+.kitchen__varieties__pizza-card hr,
+.kitchen__varieties__paneertikka-card hr,
+.kitchen__varieties__doughnut-card hr,
+.kitchen__varieties__macaroon-card hr,
+.kitchen__varieties__frenchfries-card hr {
+  opacity: 1;
+}
+
+.kitchen__varieties__pizza-card .card-footer,
+.kitchen__varieties__paneertikka-card .card-footer,
+.kitchen__varieties__doughnut-card .card-footer,
+.kitchen__varieties__macaroon-card .card-footer,
+.kitchen__varieties__frenchfries-card .card-footer {
+  border: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.kitchen__varieties__pizza-card .card-footer button,
+.kitchen__varieties__paneertikka-card .card-footer button,
+.kitchen__varieties__doughnut-card .card-footer button,
+.kitchen__varieties__macaroon-card .card-footer button,
+.kitchen__varieties__frenchfries-card .card-footer button {
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+}
+
+.kitchen__varieties__pizza-card .card-footer button .icon,
+.kitchen__varieties__paneertikka-card .card-footer button .icon,
+.kitchen__varieties__doughnut-card .card-footer button .icon,
+.kitchen__varieties__macaroon-card .card-footer button .icon,
+.kitchen__varieties__frenchfries-card .card-footer button .icon {
+  margin-left: 10px;
+}
+
+.kitchen__varieties__pizza-card .card-footer button {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.kitchen__varieties__macaroon-card .card-footer button {
+  color: #ffffff;
+}
+
+.kitchen__varieties__pizza-card .card-footer button:hover,
+.kitchen__varieties__pizza-card .card-footer button:focus {
+  color: #000;
+  background-color: #ffffff;
+}
+
+.kitchen__varieties__pizza-card .card-footer button:hover .icon {
+  filter: none;
+}
+
+.icon {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+
+.star-icon {
+  background-image: url("./assets/icons/ic-star.svg");
+}
+
+.right-arrow-icon {
+  background-image: url("./assets/icons/ic-right-arrow.svg");
+}
+
+.kitchen__header__icon {
+  background-image: url("./assets/icons/Vector.svg");
+}
+
+.vegetables-icon {
+  background-image: url("./assets/icons/ic-vegetables.svg");
+}
+
+.grains-icon {
+  background-image: url("./assets/icons/ic-grains.svg");
+}
+
+.fruits-icon {
+  background-image: url("./assets/icons/ic-fruits.svg");
+}
+
+.proteins-icon {
+  background-image: url("./assets/icons/ic-proteins.svg");
+}
+
+.food-icon {
+  background: rgba(52, 38, 121, 0.7);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+}
+
+.food-icon i {
+  width: 80px;
+  height: 80px;
+}
+
+.kitchen__varieties__pizza-card .card-footer .icon,
+.kitchen__varieties__macaroon-card .card-footer .icon {
+  filter: invert(1);
+}
+
+.kitchen__cuisine .card {
+  border: 0;
+}
+
+.kitchen__top-chefs,
+.kitchen__food-guide {
+  padding: 0 30px;
+}
