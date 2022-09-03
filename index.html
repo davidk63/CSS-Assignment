@@ -1,169 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <div class="kitchen">
-      <!-- Header start -->
-      <div class="kitchen__header">
-        <i class="icon kitchen__header__icon"></i>
-        <h1 class="kitchen__header__title">Culinary kitchen</h1>
-      </div>
-      <!-- Header end -->
-      <!-- Varieties start -->
-      <div class="kitchen__varieties">
-        <h2 class="kitchen__varieties__title">VARIETIES</h2>
-        <div class="row g-3 mt-3">
-          <div class="col-lg-6">
-            <div class="card kitchen__varieties__pizza-card">
-              <img
-                src="./assets/images/pizza.png"
-                class="w-100 h-100"
-                alt="pizza"
-              />
-              <div class="card-overlay">
-                <div class="card-body">
-                  <h3 class="card-title">
-                    Pizza is a savory dish of Italian origin
-                  </h3>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kitchen</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <div class="kitchen">
+    <!-- Header start -->
+    <div class="kitchen__header d-flex justify-content-center align-items-center">
+      <i class="icon kitchen__header__icon"></i>
+      <h1 class="kitchen__header__title">Culinary kitchen</h1>
+    </div>
+    <!-- Header end -->
+    <!-- Varieties start -->
+    <div class="kitchen__varieties">
+      <h2 class="kitchen__varieties__title">VARIETIES</h2>
+      <div class="row g-3 mt-3">
+        <div class="col-lg-6">
+          <div class="card kitchen__varieties__pizza-card">
+            <img src="./assets/images/pizza.png" class="w-100 h-100" alt="pizza" />
+            <div class="card-overlay">
+              <h3 class="card-title">
+                Pizza is a savory dish of Italian origin
+              </h3>
+              <div class="card-text">
+                Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum has been the industry.
+              </div>
+              <hr />
+              <div class="card-footer bg-transparent border-0 d-flex justify-content-between align-items-center">
+                <button type="button" class="btn btn-outline-primary d-flex align-items-center">
+                  Explore <i class="icon right-arrow-icon mx-2"></i>
+                </button>
+                <div>
+                  <i class="icon star-icon"></i>
+                  Rated
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="row g-4">
+            <div class="col-lg-6">
+              <div class="card kitchen__varieties__frenchfries-card">
+                <img src="./assets/images/french_fries.png" class="w-100 h-100" alt="french fries" />
+                <div class="card-overlay">
+                  <h3 class="card-title">Crispy French Fries</h3>
+                  <div class="card-text">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </div>
+                  <hr />
+                  <div class="card-footer bg-transparent border-0 d-flex justify-content-between align-items-center">
+                    <button type="button" class="btn d-flex align-items-center">
+                      Explore <i class="icon right-arrow-icon mx-2"></i>
+                    </button>
+                    <div>
+                      <i class="icon star-icon"></i>
+                      Rate
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="card kitchen__varieties__paneertikka-card">
+                <img src="./assets/images/paneer_tikka.png" class="w-100 h-100" alt="paneer tikka" />
+                <div class="card-overlay">
+                  <h3 class="card-title">Paneer Tikka</h3>
+                  <div class="card-text">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </div>
+                  <hr />
+                  <div class="card-footer bg-transparent border-0 d-flex justify-content-between align-items-center">
+                    <button type="button" class="btn d-flex align-items-center">
+                      Explore <i class="icon right-arrow-icon mx-2"></i>
+                    </button>
+                    <div>
+                      <i class="icon star-icon"></i>
+                      Rated
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="card kitchen__varieties__macaroon-card">
+                <img src="./assets/images/macaroon.png" class="w-100 h-100" alt="macaroon" />
+                <div class="card-overlay">
+                  <h3 class="card-title">Macaroon</h3>
                   <div class="card-text">
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry. Lorem Ipsum has been the industry.
                   </div>
                   <hr />
-                </div>
-                <div class="card-footer">
-                  <button type="button" class="btn btn-outline-primary">
-                    Explore <i class="icon right-arrow-icon"></i>
-                  </button>
-                  <div>
-                    <i class="icon star-icon"></i>
-                    Rated
+                  <div class="card-footer bg-transparent border-0 d-flex justify-content-between align-items-center">
+                    <button type="button" class="btn d-flex align-items-center">
+                      Explore <i class="icon right-arrow-icon mx-2"></i>
+                    </button>
+                    <div>
+                      <i class="icon star-icon"></i>
+                      Rate
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="row g-4">
-              <div class="col-lg-6">
-                <div class="card kitchen__varieties__frenchfries-card">
-                  <img
-                    src="./assets/images/french_fries.png"
-                    class="w-100 h-100"
-                    alt="french fries"
-                  />
-                  <div class="card-overlay">
-                    <div class="card-body">
-                      <h3 class="card-title">Crispy French Fries</h3>
-                      <div class="card-text">
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry.
-                      </div>
-                      <hr />
-                    </div>
-                    <div class="card-footer">
-                      <button type="button" class="btn">
-                        Explore <i class="icon right-arrow-icon"></i>
-                      </button>
-                      <div>
-                        <i class="icon star-icon"></i>
-                        Rate
-                      </div>
-                    </div>
+            <div class="col-lg-6">
+              <div class="card kitchen__varieties__doughnut-card">
+                <img src="./assets/images/doughnut.png" class="w-100 h-100" alt="doughnut" />
+                <div class="card-overlay">
+                  <h3 class="card-title">Doughnut</h3>
+                  <div class="card-text">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry.
                   </div>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="card kitchen__varieties__paneertikka-card">
-                  <img
-                    src="./assets/images/paneer_tikka.png"
-                    class="w-100 h-100"
-                    alt="paneer tikka"
-                  />
-                  <div class="card-overlay">
-                    <div class="card-body">
-                      <h3 class="card-title">Paneer Tikka</h3>
-                      <div class="card-text">
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry.
-                      </div>
-                      <hr />
-                    </div>
-                    <div class="card-footer">
-                      <button type="button" class="btn">
-                        Explore <i class="icon right-arrow-icon"></i>
-                      </button>
-                      <div>
-                        <i class="icon star-icon"></i>
-                        Rated
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="card kitchen__varieties__macaroon-card">
-                  <img
-                    src="./assets/images/macaroon.png"
-                    class="w-100 h-100"
-                    alt="macaroon"
-                  />
-                  <div class="card-overlay">
-                    <div class="card-body">
-                      <h3 class="card-title">Macaroon</h3>
-                      <div class="card-text">
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the industry.
-                      </div>
-                      <hr />
-                    </div>
-                    <div class="card-footer">
-                      <button type="button" class="btn">
-                        Explore <i class="icon right-arrow-icon"></i>
-                      </button>
-                      <div>
-                        <i class="icon star-icon"></i>
-                        Rate
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="card kitchen__varieties__doughnut-card">
-                  <img
-                    src="./assets/images/doughnut.png"
-                    class="w-100 h-100"
-                    alt="doughnut"
-                  />
-                  <div class="card-overlay">
-                    <div class="card-body">
-                      <h3 class="card-title">Doughnut</h3>
-                      <div class="card-text">
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the industry.
-                      </div>
-                      <hr />
-                    </div>
-                    <div class="card-footer">
-                      <button type="button" class="btn">
-                        Explore <i class="icon right-arrow-icon"></i>
-                      </button>
-                      <div>
-                        <i class="icon star-icon"></i>
-                        Rate
-                      </div>
+                  <hr />
+                  <div class="card-footer bg-transparent border-0 d-flex justify-content-between align-items-center">
+                    <button type="button" class="btn d-flex align-items-center">
+                      Explore <i class="icon right-arrow-icon mx-2"></i>
+                    </button>
+                    <div>
+                      <i class="icon star-icon"></i>
+                      Rate
                     </div>
                   </div>
                 </div>
@@ -172,193 +139,171 @@
           </div>
         </div>
       </div>
-      <!-- Varieties end -->
-      <!-- Cuisine start -->
-      <div class="kitchen__cuisine">
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Indian Cuisine</h5>
-                <p class="card-text">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">American Cuisine</h5>
-                <p class="card-text">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book. It has survived not only five centuries, but
-                  also the leap into electronic typesetting, remaining
-                  essentially unchanged.Lorem Ipsum is simply dummy text of the
-                  printing and typesetting industry. Lorem Ipsum has been the
-                  industry's standard.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Chinese Cuisine</h5>
-                <p class="card-text">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Cuisine end -->
-      <!-- Top Chefs start -->
-      <div class="kitchen__top-chefs">
-        <h2 class="kitchen__top-chefs__title">TOP CHEFS</h2>
-        <div class="card border-0 kitchen__top-chefs__card">
-          <img
-            src="./assets/images/doughnut_banner.png"
-            class="w-100 h-100"
-            alt="doughnut banner"
-          />
-          <div class="card-img-overlay">
-            <div class="row justify-content-center align-items-center pt-5">
-              <div class="col">
-                <div
-                  class="card mb-3 text-center bg-transparent text-white border-0"
-                >
-                  <div class="card-body">
-                    <img
-                      src="./assets/images/chef_EileenJohnson.png"
-                      class="rounded-circle"
-                      alt="Eileen Johnson"
-                    />
-                    <h5 class="card-title">Eileen Johnson</h5>
-                    <p class="card-text">Executive Chef, USA</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-xlg-2">
-                <div class="card mb-3 text-center border-0">
-                  <div class="card-body">
-                    <img
-                      src="./assets/images/chef_RobertDowneyJr.png"
-                      class="rounded-circle"
-                      alt="Robert Downey Jr"
-                    />
-                    <h5 class="card-title">Robert Downey Jr</h5>
-                    <p class="card-text">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div
-                  class="card mb-3 text-center bg-transparent text-white border-0"
-                >
-                  <div class="card-body">
-                    <img
-                      src="./assets/images/chef_AmandaDority.png"
-                      class="rounded-circle"
-                      alt="Amanda Dority"
-                    />
-                    <h5 class="card-title">Amanda Dority</h5>
-                    <p class="card-text">Sous Chef, India</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Top Chefs end -->
-      <!-- Food guide start -->
-      <div class="kitchen__food-guide mb-5">
-        <div class="card border-0">
-          <img
-            src="./assets/images/food_banner.png"
-            class="w-100 h-100"
-            alt="food banner"
-          />
-          <div class="card-img-overlay">
-            <h2 class="kitchen__food-guide__title mt-5">FOOD GUIDE</h2>
-            <div class="row justify-content-between">
-              <div class="col-4">
-                <div class="card text-center bg-transparent border-0">
-                  <div class="card-body">
-                    <div class="food-icon">
-                      <i class="icon vegetables-icon"></i>
-                    </div>
-                    <h5 class="card-title my-4">VEGETABLES</h5>
-                    <p class="card-text">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-4">
-                <div class="card text-center bg-transparent border-0">
-                  <div class="card-body">
-                    <div class="food-icon">
-                      <i class="icon grains-icon"></i>
-                    </div>
-                    <h5 class="card-title my-4">WHOLE GRAINS</h5>
-                    <p class="card-text">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row justify-content-between">
-              <div class="col-4">
-                <div class="card text-center bg-transparent border-0">
-                  <div class="card-body">
-                    <div class="food-icon">
-                      <i class="icon fruits-icon"></i>
-                    </div>
-                    <h5 class="card-title my-4">FRUITS</h5>
-                    <p class="card-text">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-4">
-                <div class="card text-center bg-transparent border-0">
-                  <div class="card-body">
-                    <div class="food-icon">
-                      <i class="icon proteins-icon"></i>
-                    </div>
-                    <h5 class="card-title my-4">HEALTHY PROTEIN</h5>
-                    <p class="card-text">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Food guide end -->
     </div>
-  </body>
+    <!-- Varieties end -->
+    <!-- Cuisine start -->
+    <div class="kitchen__cuisine">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card border-0">
+            <div class="card-body">
+              <h5 class="card-title">Indian Cuisine</h5>
+              <p class="card-text">
+                Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum has been the industry's
+                standard dummy text ever since the 1500s.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card border-0">
+            <div class="card-body">
+              <h5 class="card-title">American Cuisine</h5>
+              <p class="card-text">
+                Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum has been the industry's
+                standard dummy text ever since the 1500s, when an unknown
+                printer took a galley of type and scrambled it to make a type
+                specimen book. It has survived not only five centuries, but
+                also the leap into electronic typesetting, remaining
+                essentially unchanged.Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card border-0">
+            <div class="card-body">
+              <h5 class="card-title">Chinese Cuisine</h5>
+              <p class="card-text">
+                Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum has been the industry's
+                standard dummy text ever since the 1500s.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Cuisine end -->
+    <!-- Top Chefs start -->
+    <div class="kitchen__top-chefs">
+      <h2 class="kitchen__top-chefs__title">TOP CHEFS</h2>
+      <div class="card border-0 kitchen__top-chefs__card">
+        <img src="./assets/images/doughnut_banner.png" class="w-100 h-100" alt="doughnut banner" />
+        <div class="card-img-overlay">
+          <div class="row justify-content-center align-items-center pt-5">
+            <div class="col">
+              <div class="card mb-3 text-center bg-transparent text-white border-0">
+                <div class="card-body">
+                  <img src="./assets/images/chef_EileenJohnson.png" class="rounded-circle" alt="Eileen Johnson" />
+                  <h5 class="card-title">Eileen Johnson</h5>
+                  <p class="card-text">Executive Chef, USA</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-xlg-2">
+              <div class="card mb-3 text-center border-0">
+                <div class="card-body">
+                  <img src="./assets/images/chef_RobertDowneyJr.png" class="rounded-circle" alt="Robert Downey Jr" />
+                  <h5 class="card-title">Robert Downey Jr</h5>
+                  <p class="card-text">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mb-3 text-center bg-transparent text-white border-0">
+                <div class="card-body">
+                  <img src="./assets/images/chef_AmandaDority.png" class="rounded-circle" alt="Amanda Dority" />
+                  <h5 class="card-title">Amanda Dority</h5>
+                  <p class="card-text">Sous Chef, India</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Top Chefs end -->
+    <!-- Food guide start -->
+    <div class="kitchen__food-guide mb-5">
+      <div class="card border-0">
+        <img src="./assets/images/food_banner.png" class="w-100 h-100" alt="food banner" />
+        <div class="card-img-overlay">
+          <h2 class="kitchen__food-guide__title mt-5">FOOD GUIDE</h2>
+          <div class="row justify-content-between">
+            <div class="col-4">
+              <div class="card text-center bg-transparent border-0">
+                <div class="card-body">
+                  <div class="food-icon">
+                    <i class="icon vegetables-icon"></i>
+                  </div>
+                  <h5 class="card-title my-4">VEGETABLES</h5>
+                  <p class="card-text">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card text-center bg-transparent border-0">
+                <div class="card-body">
+                  <div class="food-icon">
+                    <i class="icon grains-icon"></i>
+                  </div>
+                  <h5 class="card-title my-4">WHOLE GRAINS</h5>
+                  <p class="card-text">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-between">
+            <div class="col-4">
+              <div class="card text-center bg-transparent border-0">
+                <div class="card-body">
+                  <div class="food-icon">
+                    <i class="icon fruits-icon"></i>
+                  </div>
+                  <h5 class="card-title my-4">FRUITS</h5>
+                  <p class="card-text">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card text-center bg-transparent border-0">
+                <div class="card-body">
+                  <div class="food-icon">
+                    <i class="icon proteins-icon"></i>
+                  </div>
+                  <h5 class="card-title my-4">HEALTHY PROTEIN</h5>
+                  <p class="card-text">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Food guide end -->
+  </div>
+</body>
+
 </html>
